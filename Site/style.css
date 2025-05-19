@@ -1,0 +1,361 @@
+/* Mantém o que você já tinha */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f0e6; 
+    color: #f5f0e6;
+}
+
+header {
+    background-color: rgba(60, 42, 30, 0.9);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 70px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #d2b48c;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('imagens/fundo.png.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    text-align: left; 
+    padding: 80px 50px 0 50px; 
+}
+
+.texto-hero {
+    max-width: 600px; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px; 
+}
+
+.texto-hero h1 {
+    color: white;
+    font-size: 60px;
+    margin: 0;
+}
+
+.texto-hero h2 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+.texto-hero p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.sobre {
+    padding: 100px 50px 50px 50px;
+    background-color: #f5f0e6;
+    color: #333;
+}
+
+.sobre h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.conteudo-sobre {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.conteudo-sobre img {
+    flex: 1;
+    max-width: 450px;
+    width: 100%;
+    border-radius: 40px;
+}
+
+
+.conteudo-sobre p {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Novas seções */
+
+.produtos-vitrine {
+    background-color: #4e3d2a; /* marrom escuro */
+    padding: 80px 50px;
+    text-align: center;
+    color: white;
+  }
+  
+  .produtos-vitrine h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .descricao-produtos {
+    max-width: 900px;
+    margin: 0 auto 60px auto;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .produtos-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .card-produto {
+    background-color: white;
+    color: black;
+    width: 300px;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-produto:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 15px;
+  }
+  
+  .card-produto h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .seta {
+    display: block;
+    font-size: 24px;
+    color: black;
+    margin-top: 10px;
+  }
+  .card-produto img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 12px;
+    margin-bottom: 15px;
+  }
+    
+.orcamento {
+  background-color: #f5f0e6;
+  padding: 80px 50px;
+  color: #333;
+}
+
+.orcamento h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.orcamento form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.orcamento input, .orcamento textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.orcamento button {
+  background-color: #3c2a1e;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.orcamento button:hover {
+  background-color: #5a3e2d;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #4a3e33;
+    color: white;
+    text-align: center;
+  }
+  
+  .clientes {
+    padding: 50px 20px;
+  }
+  
+  .clientes h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+  
+  .depoimentos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .card {
+    background-color: #4a3e33;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    background-color: white;
+  }
+  
+  .card h2 {
+    margin: 10px 0;
+    font-size: 24px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  .estrelas {
+    font-size: 24px;
+    color: gold;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .contato {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .info-contato {
+    width: 50%;
+    background-color: #f8f1e6;
+    padding: 80px 40px 80px 10px; /* topo, direita, baixo, ESQUERDA */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #000;
+  }
+  
+  
+  .info-contato h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  .item {
+    margin-bottom: 30px;
+  }
+  
+  .item h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+  }
+  
+  .item p {
+    font-size: 18px;
+  }
+  
+  .redes-sociais {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+  }
+  
+  .redes-sociais img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .logo-container {
+    width: 50%;
+    background-image: url('imagens/final.png.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo-container img {
+    max-width: 300px;
+    height: auto;
+  }
+  
+
+

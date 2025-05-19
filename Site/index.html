@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oak Smiths</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="imagens/logo1.png" alt="Logo Oak Smiths">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Quem Somos</a></li>
+        <li><a href="#">Propriedades</a></li>
+        <li><a href="#">Cadastrar</a></li>
+        <li><a href="#">Entrar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="texto-hero">
+      <h1>OAK SMITHS</h1>
+      <br><br>
+      <h2>Timeless woodwork - Marcenaria que atravessa gerações.</h2>
+      <br>
+      <p>
+        Na OakSmiths, cada móvel é criado para durar, carregando consigo tradição, autenticidade e 
+        um design pensado para permanecer atual com o passar dos anos. 
+        Unimos técnicas artesanais e inovação para entregar peças que contam histórias e acompanham gerações.
+      </p>
+    </div>
+  </section>
+  
+  <section class="sobre">
+    <h2>Sobre a empresa</h2>
+    <div class="conteudo-sobre">
+      <img src="imagens/mesa.rustica.png" alt="Mesa de madeira elegante">
+      <p>
+        Nós somos uma loja online especializada em móveis planejados sob medida, com foco na personalização, qualidade e design diferenciado. A Oak Smiths tem como propósito, oferecer uma experiência prática e acolhedora, onde os clientes podem entrar em contato diretamente conosco, descrever seus critérios e preferências, e receber soluções exclusivas em marcenaria. Unimos o cuidado artesanal à comodidade digital para criar peças únicas que valorizam cada ambiente.
+      </p>
+    </div>
+  </section>
+
+  <section class="produtos-vitrine">
+    <h2>Produtos</h2>
+    <p class="descricao-produtos">
+      A OakSmiths se guia pela qualidade, honestidade, pontualidade e personalização. Nós valorizamos o trabalho artesanal, buscamos inovação no design e sempre com foco em oferecer móveis feitos com responsabilidade e excelência. A seguir estão alguns de nossos trabalhos.
+    </p>
+    <div class="produtos-grid">
+      <div class="card-produto">
+        <img src="imagens/armario de cozinha.png.jpeg" alt="Armário de Cozinha">
+        <h3>Armários de Cozinha/ Folhado em Madeira</h3>
+        <span class="seta">&#x25BC;</span>
+      </div>
+      <div class="card-produto">
+        <img src="imagens/mesa.rustica.png" alt="Mesa de Jantar">
+        <h3>Mesa Copa / Cozinha Portofino Carraro</h3>
+        <span class="seta">&#x25BC;</span>
+      </div>
+      <div class="card-produto">
+        <img src="imagens/painel para tv.png.jpeg" alt="Painel para TV">
+        <h3>Painel para TV</h3>
+        <span class="seta">&#x25BC;</span>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <section class="orcamento">
+    <h2>Pedir Orçamento</h2>
+    <form action="enviar.php" method="POST">
+      <input type="text" name="nome" placeholder="Nome completo" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="tel" name="telefone" placeholder="Telefone" required>
+      <textarea name="mensagem" placeholder="Descreva o móvel, medidas e dúvidas..." required></textarea>
+      <button type="submit">Enviar Orçamento</button>
+    </form>
+  </section>
+
+  <section class="clientes">
+    <h1>Clientes</h1>
+
+    <div class="depoimentos">
+      <!-- Cliente 1 -->
+      <div class="card">
+        <img src="imagens/joana.png.jpeg" alt="Joana Fontes">
+        <h2>Joana Fontes</h2>
+        <p>A OakSmiths entendeu exatamente o que eu queria. Consegui um móvel lindo, funcional e feito sob medida para o meu espaço. Atendimento humano e atencioso, coisa rara hoje em dia.</p>
+        <div class="estrelas">★★★★★</div>
+      </div>
+
+      <!-- Cliente 2 -->
+      <div class="card">
+        <img src="imagens/ricardo.png.jpeg" alt="Ricardo Silva">
+        <h2>Ricardo Silva</h2>
+        <p>Fiquei encantada com o cuidado artesanal e o acabamento. A OakSmiths realmente entrega o que promete: móveis de alto padrão, com personalidade.</p>
+        <div class="estrelas">★★★★★</div>
+      </div>
+
+      <!-- Cliente 3 -->
+      <div class="card">
+        <img src="imagens/antonio.png.jpeg" alt="Antônio Santos">
+        <h2>Antônio Santos</h2>
+        <p>Ótimo atendimento e muita qualidade no produto. Recomendo! Desde o primeiro contato até a entrega, todo o processo foi rápido e profissional.</p>
+        <div class="estrelas">★★★★★</div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="contato">
+    <div class="info-contato">
+      <h1>Entre em<br>contato</h1>
+
+      <div class="item">
+        <h3>E-MAIL</h3>
+        <p>OKASMITHS@gmail.com</p>
+      </div>
+
+      <div class="item">
+        <h3>TELEFONE</h3>
+        <p>(12) 3456-7890</p>
+      </div>
+
+      <div class="redes-sociais">
+        <img src="imagens/whats.png" alt="WhatsApp">
+        <img src="imagens/insta2.png" alt="Instagram">
+        <img src="imagens/gmail2.png" alt="Email">
+      </div>
+    </div>
+
+    <div class="logo-container">
+      <img src="logo-oaksmiths.png" alt="Oak Smiths">
+    </div>
+  </section>
