@@ -1,0 +1,131 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f0e6; 
+    color: #f5f0e6;
+}
+
+header {
+    background-color: rgba(60, 42, 30, 0.9);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 70px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #d2b48c;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('imagens/fundo.png.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    text-align: left; 
+    padding: 80px 50px 0 50px; 
+}
+
+.texto-hero {
+    max-width: 600px; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px; 
+}
+
+.texto-hero h1 {
+    color: white;
+    font-size: 60px;
+    margin: 0;
+}
+
+.texto-hero h2 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+.texto-hero p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.sobre {
+    padding: 100px 50px 50px 50px;
+    background-color: #f5f0e6;
+    color: #333;
+}
+
+.sobre h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.conteudo-sobre {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.conteudo-sobre img {
+    width: 350px;
+    max-width: 300%;
+    border-radius: 15px;
+}
+
+.conteudo-sobre p {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
